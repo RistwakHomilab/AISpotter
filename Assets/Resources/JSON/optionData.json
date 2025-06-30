@@ -1,0 +1,62 @@
+[
+  {
+    "id": "google-assistant-5615055_1280",
+    "text": "Google Assistant answering a question",
+    "type": "AI"
+  },
+  {
+    "id": "google",
+    "text": "Google search engine homepage",
+    "type": "AI"
+  },
+  {
+    "id": "google mini",
+    "text": "Google Mini smart speaker",
+    "type": "AI"
+  },
+  {
+    "id": "smart class",
+    "text": "Smart classroom with AI tools",
+    "type": "AI"
+  },
+  {
+    "id": "smart watch1 1",
+    "text": "Smartwatch with fitness tracking",
+    "type": "AI"
+  },
+  {
+    "id": "tesla",
+    "text": "Tesla electric car with autopilot",
+    "type": "AI"
+  },
+  {
+    "id": "normal board",
+    "text": "Whiteboard with hand-written notes",
+    "type": "NotAI"
+  },
+  {
+    "id": "normal camera",
+    "text": "Standard point-and-shoot camera",
+    "type": "NotAI"
+  },
+  {
+    "id": "normal cart",
+    "text": "Shopping cart without smart tech",
+    "type": "NotAI"
+  },
+  {
+    "id": "normal speaker",
+    "text": "Basic wired speaker system",
+    "type": "NotAI"
+  },
+  {
+    "id": "normal tv",
+    "text": "Non-smart television set",
+    "type": "NotAI"
+  },
+  {
+    "id": "normal watch",
+    "text": "Analog wristwatch",
+    "type": "NotAI"
+  }
+]
