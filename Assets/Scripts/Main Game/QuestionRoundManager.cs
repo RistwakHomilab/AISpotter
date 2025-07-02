@@ -14,45 +14,46 @@ public class QuestionRoundManager : MonoBehaviour
     public GameObject optionContainer;
     public OptionCardSpawner spawner;
 
+    [Header("Clock Animation")]
+    public RectTransform clockIcon;              // Assign your clock icon RectTransform
+    public float clockSpinSpeed = 180f;          // Degrees per second
+
     private float timeRemaining;
     private bool roundActive = false;
-
     private List<OptionCard> selectedCards = new List<OptionCard>();
 
     void Start()
     {
         if (GameStateManager.Instance != null && GameStateManager.Instance.resumeMode)
-        {
-            ResumeGame(); // ✅ Call this instead of StartNewRound
-        }
+            ResumeGame();
         else
-        {
             StartNewRound();
-        }
     }
 
     void Update()
     {
-        if (roundActive)
-        {
-            timeRemaining -= Time.deltaTime;
-            timerFillImage.fillAmount = timeRemaining / roundTime;
+        if (!roundActive) return;
 
-            if (timeRemaining <= 0)
-            {
-                roundActive = false;
-                EndRound();
-            }
+        // Update timer
+        timeRemaining -= Time.deltaTime;
+        timerFillImage.fillAmount = timeRemaining / roundTime;
+
+        // Rotate clock icon while round is active
+        if (clockIcon != null)
+            clockIcon.Rotate(0f, 0f, -clockSpinSpeed * Time.deltaTime);
+
+        if (timeRemaining <= 0f)
+        {
+            roundActive = false;
+            EndRound();
         }
     }
 
     void StartNewRound()
     {
-        // Clear previous round
+        // Clear previous options
         foreach (Transform child in optionContainer.transform)
-        {
             Destroy(child.gameObject);
-        }
 
         selectedCards.Clear();
 
@@ -73,18 +74,17 @@ public class QuestionRoundManager : MonoBehaviour
         }
         else
         {
-            if (selectedCards.Contains(card))
-                selectedCards.Remove(card);
+            selectedCards.Remove(card);
         }
     }
 
     void EndRound()
     {
+        // Reveal all cards
         foreach (Transform child in optionContainer.transform)
         {
-            OptionCard card = child.GetComponent<OptionCard>();
-            if (card != null)
-                card.RevealResult();
+            var card = child.GetComponent<OptionCard>();
+            if (card != null) card.RevealResult();
         }
 
         StartCoroutine(NextRoundDelay());
@@ -103,7 +103,7 @@ public class QuestionRoundManager : MonoBehaviour
 
         foreach (Transform child in optionContainer.transform)
         {
-            OptionCard card = child.GetComponent<OptionCard>();
+            var card = child.GetComponent<OptionCard>();
             if (card != null)
             {
                 ids.Add(card.GetOptionId());
@@ -116,15 +116,13 @@ public class QuestionRoundManager : MonoBehaviour
 
     public void ResumeGame()
     {
-        // Clear existing cards
+        // Clear existing options
         foreach (Transform child in optionContainer.transform)
-        {
             Destroy(child.gameObject);
-        }
 
         selectedCards.Clear();
 
-        // Load data from GameStateManager
+        // Load saved state
         var state = GameStateManager.Instance;
         spawner.SpawnOptionsWithPreset(state.currentQuestionIDs, state.selectedStates, HandleCardClick);
 

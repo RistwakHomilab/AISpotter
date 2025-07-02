@@ -30,6 +30,10 @@ public class AboutTextManager : MonoBehaviour
                 "- You will see which of your selected images were correct.\n" +
                 "- Learn from the results and improve your understanding of AI.\n\n" +
 
+                "<b>SCORE</b>\n" +
+                "- Correct answer: +10 points\n" +
+                "- Incorrect answer: -4 points\n\n" +
+
                 "Enjoy the game, think critically, and discover how AI is shaping the world around you.";
         }
     }

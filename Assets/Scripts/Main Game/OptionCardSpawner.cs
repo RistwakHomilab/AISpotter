@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class OptionCardSpawner : MonoBehaviour
 {
+    public static OptionCardSpawner instance;
     [Header("Prefabs and Layout")]
     public GameObject optionCardPrefab;
     public Transform optionContainer;
+    public TMP_Text scoreText;
 
     [Header("JSON & Sprites")]
     public string jsonFileName = "JSON/optionData"; // inside Resources
@@ -19,6 +21,7 @@ public class OptionCardSpawner : MonoBehaviour
 
     void Start()
     {
+        instance = this;
         BuildSpriteLookup();
         LoadOptionsFromJSON();
         OptionDatabase.allOptions = optionDataList; // ✅ This line adds all loaded options to the DB
