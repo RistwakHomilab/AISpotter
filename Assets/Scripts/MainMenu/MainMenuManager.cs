@@ -23,13 +23,13 @@ public class MainMenuManager : MonoBehaviour
         aboutUI.SetActive(false);
         if (GameStateManager.Instance != null && GameStateManager.Instance.HasPreviousSession)
         {
-            startButtonText.text = "RESUME";
+            startButtonText.text = "fQj 'kq:";
             splashUI.SetActive(false);
             homeUI.SetActive(true);
         }
         else
         {
-            startButtonText.text = "START";
+            startButtonText.text = "'kq:";
         }
 
         splashCanvasGroup = splashUI.GetComponent<CanvasGroup>();

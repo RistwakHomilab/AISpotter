@@ -366,8 +366,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 483}
-  m_SizeDelta: {x: 250, y: 50}
+  m_AnchoredPosition: {x: 47.881386, y: 483}
+  m_SizeDelta: {x: 345.7627, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &167565122
 MonoBehaviour:
@@ -389,10 +389,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Loading...
+  m_text: yksM gks jgk gS---
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f783f9c995ddc7d44a710cf957bafe15, type: 2}
+  m_sharedMaterial: {fileID: -7105728562786257503, guid: f783f9c995ddc7d44a710cf957bafe15, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -523,10 +523,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Spot the AI.
+  m_text: ',-vkbZ- dks igpkusaA'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6e2256b5193bf374fb5de6c7a48b5cbb, type: 2}
-  m_sharedMaterial: {fileID: 8580121850517404069, guid: 6e2256b5193bf374fb5de6c7a48b5cbb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f783f9c995ddc7d44a710cf957bafe15, type: 2}
+  m_sharedMaterial: {fileID: -7105728562786257503, guid: f783f9c995ddc7d44a710cf957bafe15, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1234,10 +1234,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: No
+  m_text: ugha
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 20af6abdbda5fa44e8d1679d472972c6, type: 2}
-  m_sharedMaterial: {fileID: 6299645338809742765, guid: 20af6abdbda5fa44e8d1679d472972c6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f783f9c995ddc7d44a710cf957bafe15, type: 2}
+  m_sharedMaterial: {fileID: -7105728562786257503, guid: f783f9c995ddc7d44a710cf957bafe15, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1891,10 +1891,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Yes
+  m_text: "gk\xA1"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 20af6abdbda5fa44e8d1679d472972c6, type: 2}
-  m_sharedMaterial: {fileID: 6299645338809742765, guid: 20af6abdbda5fa44e8d1679d472972c6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f783f9c995ddc7d44a710cf957bafe15, type: 2}
+  m_sharedMaterial: {fileID: -7105728562786257503, guid: f783f9c995ddc7d44a710cf957bafe15, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2239,10 +2239,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Do you want to exit?
+  m_text: D;k vkidks ckgj fudyuk gS\
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6e2256b5193bf374fb5de6c7a48b5cbb, type: 2}
-  m_sharedMaterial: {fileID: 8580121850517404069, guid: 6e2256b5193bf374fb5de6c7a48b5cbb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f783f9c995ddc7d44a710cf957bafe15, type: 2}
+  m_sharedMaterial: {fileID: -7105728562786257503, guid: f783f9c995ddc7d44a710cf957bafe15, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

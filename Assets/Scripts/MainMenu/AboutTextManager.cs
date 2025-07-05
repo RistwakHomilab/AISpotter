@@ -10,31 +10,31 @@ public class AboutTextManager : MonoBehaviour
         if (aboutTextField != null)
         {
             aboutTextField.text =
-                "<b>ABOUT THE GAME</b>\n" +
-                "AI Spotter is an educational game that helps players recognize how Artificial Intelligence is used in everyday life.\n\n" +
+                "<b>[ksy ds ckjs esa</b>\n" +
+                ",vkbZ Li‚Vj ,d 'kSf{kd xse gS tks f[kykfM+;ksa dks jkst+ejkZ dh ft+anxh esa —f=e cqf)eÙkk ds mi;ksx dks igpkuus esa enn djrk gSAn\n\n" +
 
-                "<b>PURPOSE</b>\n" +
-                "- Understand the presence of AI in common apps and devices.\n" +
-                "- Learn how to distinguish between AI-powered and non-AI technologies.\n" +
-                "- Encourage curiosity about technology in daily life.\n\n" +
+                "<b>mís';</b>\n" +
+                "- lkekU; ,sIl vkSj midj.kksa esa ,vkbZ dh mifLFkfr dks le>saA\n" +
+                "- ,vkbZ&lapkfyr vkSj xSj&,vkbZ rduhdksa ds chp varj djuk lh[ksaA\n" +
+                "- nSfud thou esa çkS|ksfxdh ds çfr ftKklk dks çksRlkfgr djsaA\n\n" +
 
-                "<b>HOW TO PLAY</b>\n" +
-                "- A scene will be shown with multiple images (apps, gadgets, tools, etc.).\n" +
-                "- A question or prompt will be given.\n" +
-                "- Select all images you think are powered by AI.\n" +
-                "- You can select as many images as you want — even all of them if you believe they are correct.\n" +
-                "- You have a limited time to make your selections.\n" +
-                "- Once time runs out, your answers will be automatically submitted.\n\n" +
+                "<b>[ksyus dk rjhdk</b>\n" +
+                "- ,d –'; fn[kkbZ nsxk ftlesa dbZ Nfo;k¡ ¼,sIl] xStsV~l] midj.k vkfn½ gksaxhA\n" +
+                "- ,d ç'u ;k ladsr fn;k tk,xkA\n" +
+                "- mu lHkh Nfo;ksa dk p;u djsa ftUgsa vki lksprs gSa fd os ,vkbZ }kjk lapkfyr gSaA\n" +
+                "- vki ftruh pkgsa mruh Nfo;k¡ pqu ldrs gSa — ;fn vki ekurs gSa fd os lHkh lgh gSa rks lHkh pqu ldrs gSaA\n" +
+                "- vkids ikl p;u ds fy, lhfer le; gSA\n" +
+                "- tc le; lekIr gks tk,xk] vkids mÙkj Lopkfyr :i ls lcfeV gks tk,axsA\n\n" +
 
-                "<b>AFTER SUBMISSION</b>\n" +
-                "- You will see which of your selected images were correct.\n" +
-                "- Learn from the results and improve your understanding of AI.\n\n" +
+                "<b>lcfe'ku ds ckn</b>\n" +
+                "- vki ns[ksaxs fd vkius fdu Nfo;ksa dk p;u fd;k vkSj os fdruh lgh FkhaA\n" +
+                "- ifj.kkeksa ls lh[ksa vkSj ,vkbZ dh viuh le> esa lqèkkj djsaA\n\n" +
 
-                "<b>SCORE</b>\n" +
-                "- Correct answer: +10 points\n" +
-                "- Incorrect answer: -4 points\n\n" +
+                "<b>vad</b>\n" +
+                "- lgh mÙkj: $10 vad\n" +
+                "- xyr mÙkj: &4 vad\n\n" +
 
-                "Enjoy the game, think critically, and discover how AI is shaping the world around you.";
+                "xse dk vkuan ysa] lksp&fopkj ls fu.kZ; ysa] vkSj tkusa fd ,vkbZ vkids vklikl dh nqfu;k dks dSls vkdkj ns jgk gSA";
         }
     }
 }

@@ -140,10 +140,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Questionsfgysfgsaj
+  m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 649acba1b8bbeeb4da648b66fb6ef8f8, type: 2}
-  m_sharedMaterial: {fileID: 1088273698606451314, guid: 649acba1b8bbeeb4da648b66fb6ef8f8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f783f9c995ddc7d44a710cf957bafe15, type: 2}
+  m_sharedMaterial: {fileID: -7105728562786257503, guid: f783f9c995ddc7d44a710cf957bafe15, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
