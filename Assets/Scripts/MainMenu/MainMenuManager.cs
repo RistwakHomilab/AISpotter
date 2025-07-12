@@ -23,7 +23,7 @@ public class MainMenuManager : MonoBehaviour
         aboutUI.SetActive(false);
         if (GameStateManager.Instance != null && GameStateManager.Instance.HasPreviousSession)
         {
-            startButtonText.text = "fQj 'kq:";
+            startButtonText.text = "çkjEHk";
             splashUI.SetActive(false);
             homeUI.SetActive(true);
         }
@@ -62,23 +62,27 @@ public class MainMenuManager : MonoBehaviour
 
     public void OnPlayClicked()
     {
+        SoundManager.Instance.PlaySound("Click");
         loadingPanel.SetActive(true);
         SceneManager.LoadScene("Mobile Game");
     }
 
     public void OnExitClicked()
     {
+        SoundManager.Instance.PlaySound("Click");
         Application.Quit();
     }
 
     public void OnAboutClicked()
     {
+        SoundManager.Instance.PlaySound("Click");
         homeUI.SetActive(false);
         aboutUI.SetActive(true);
     }
 
     public void OnBackClicked()
     {
+        SoundManager.Instance.PlaySound("Click");
         aboutUI.SetActive(false);
         homeUI.SetActive(true);
     }

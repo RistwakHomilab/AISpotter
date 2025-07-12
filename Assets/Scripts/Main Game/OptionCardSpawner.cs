@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class OptionCardSpawner : MonoBehaviour
 {
+    public GameObject comingSoonPanel;
     public static OptionCardSpawner instance;
     [Header("Prefabs and Layout")]
     public GameObject optionCardPrefab;
@@ -54,6 +55,11 @@ public class OptionCardSpawner : MonoBehaviour
         {
             OptionData[] data = JsonHelper.FromJson<OptionData>(jsonText.text);
             optionDataList.AddRange(data);
+
+            if(optionDataList == null || optionDataList.Count < 1)
+            {
+                comingSoonPanel.SetActive(true);
+            }
         }
         else
         {

@@ -44,7 +44,7 @@ public class OptionCard : MonoBehaviour, IPointerClickHandler
 
         // Display current score at start
         if (OptionCardSpawner.instance != null && OptionCardSpawner.instance.scoreText != null)
-            OptionCardSpawner.instance.scoreText.text = totalScore.ToString();
+            OptionCardSpawner.instance.scoreText.text = $"vad {totalScore}";
     }
 
     /// <summary>
@@ -67,6 +67,7 @@ public class OptionCard : MonoBehaviour, IPointerClickHandler
     /// </summary>
     public void OnPointerClick(PointerEventData eventData)
     {
+        SoundManager.Instance.PlaySound("Click");
         isSelected = !isSelected;
         bg.sprite = isSelected ? selectedImage : defaultImage;
         onCardClicked?.Invoke(this);
@@ -98,7 +99,7 @@ public class OptionCard : MonoBehaviour, IPointerClickHandler
         // Update global score
         totalScore += delta;
         if (OptionCardSpawner.instance != null && OptionCardSpawner.instance.scoreText != null)
-            OptionCardSpawner.instance.scoreText.text = totalScore.ToString();
+            OptionCardSpawner.instance.scoreText.text = $"vad {totalScore}";
     }
 
     /// <summary>

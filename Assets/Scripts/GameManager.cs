@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour
     public GameObject loadingPanel;
     public GameObject mainMenuPanel;
     public GameObject exitPanel; // Assign in inspector
+    public GameObject comingSoonPanel;
+
+    bool isComingSoonActive = false;
 
     void Start()
     {
@@ -17,10 +20,15 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if(comingSoonPanel.activeSelf)
+            isComingSoonActive = false;
         if (Input.GetKeyDown(KeyCode.Escape)) // Android back button
         {
             if (!exitPanel.activeSelf)
+            {
                 exitPanel.SetActive(true);
+                comingSoonPanel.SetActive(false);
+            }
         }
 
         if (exitPanel.activeSelf)
@@ -31,18 +39,28 @@ public class GameManager : MonoBehaviour
 
     public void OnExitYes()
     {
+        SoundManager.Instance.PlaySound("Click");
         Application.Quit();
         Debug.Log("Game closed.");
     }
 
     public void OnExitNo()
     {
-        exitPanel.SetActive(false);
+        SoundManager.Instance.PlaySound("Click");
+        if(isComingSoonActive)
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+        else
+        {
+            exitPanel.SetActive(false);
+        }
         Time.timeScale = 1f; // Resume game if exit panel is closed
     }
 
     public void OnNavigateBackToMainMenu()
     {
+        SoundManager.Instance.PlaySound("Click");
         GameStateManager.Instance.SaveCurrentState();
 
         if (loadingPanel != null)
